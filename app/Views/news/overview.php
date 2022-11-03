@@ -1,6 +1,7 @@
 </php echo 
 <h2><?= esc($title) ?></h2>
-
+<br />
+<a href="<?php echo base_url()?>/news/create" id="create" type="button">Create Story</a>
 <?php if (! empty($news) && is_array($news)): ?>
 
     <?php foreach ($news as $news_item): ?>
